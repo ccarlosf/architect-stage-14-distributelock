@@ -1,4 +1,4 @@
-package com.ccarlos.distributelock;
+package com.example.distributelock;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
