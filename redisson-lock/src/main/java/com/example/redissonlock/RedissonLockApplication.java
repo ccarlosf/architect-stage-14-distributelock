@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
+@ImportResource("classpath*:redisson.xml")
 public class RedissonLockApplication {
 
     public static void main(String[] args) {
