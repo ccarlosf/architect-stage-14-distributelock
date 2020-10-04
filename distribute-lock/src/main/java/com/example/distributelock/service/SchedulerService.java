@@ -15,7 +15,7 @@ public class SchedulerService {
 
     @Scheduled(cron = "0/5 * * * * ?")
     public void sendSms(){
-        try(RedisLock redisLock = new RedisLock(redisTemplate,"autoSms",30)) {
+        try(RedisLock redisLock = new RedisLock(redisTemplate,"autoSms",10000)) {
             if (redisLock.getLock()){
                 log.info("向138xxxxxxxx发送短信！");
             }

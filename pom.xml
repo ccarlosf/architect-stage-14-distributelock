@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>distribute-zk-lock</module>
+        <module>redisson-lock</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
